@@ -1,6 +1,6 @@
-# DSCformer: A Dual-Branch Network for Crack Segmentation
+# DSCformer: A Dual-Branch Network Integrating Enhanced Dynamic Snake Convolution and SegFormer for Crack Segmentation
 
-**DSCformer** is a hybrid model integrating **Enhanced Dynamic Snake Convolution (Enhanced DSConv)** and **SegFormer** for crack segmentation in concrete structures.
+Accepted by **[The 42nd International Symposium on Automation and Robotics in Construction(ISARC 2025)]**.
 
 ## Abstract
 
@@ -14,6 +14,8 @@ To address these challenges, we introduce **DSCformer**, a hybrid model that com
 - **DSCformer**: Combines nhanced DSConv and SegFormer, significantly improving crack segmentation performance and outperforming state-of-the-art methods.
 
 We evaluate DSCformer on the **Crack3238** and **FIND** datasets, achieving impressive Intersection over Union (IoU) scores of **59.22%** and **87.24%**, respectively.
+
+For more details, refer to the [paper](https://doi.org/10.22260/ISARC2025/0140).
 
 ## Dataset Links
 
