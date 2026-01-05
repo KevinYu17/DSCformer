@@ -1,17 +1,17 @@
 # DSCformer: A Dual-Branch Network for Crack Segmentation
 
-**DSCformer** is a hybrid model integrating **Enhanced Dynamic Snake Convolution (DSConv)** and **SegFormer** for effective crack segmentation in concrete structures.
+**DSCformer** is a hybrid model integrating **Enhanced Dynamic Snake Convolution (Enhanced DSConv)** and **SegFormer** for crack segmentation in concrete structures.
 
 ## Abstract
 
 Accurately detecting and segmenting cracks in concrete structures is essential for construction quality monitoring, ensuring safety and timely maintenance. While Convolutional Neural Networks (CNNs) have demonstrated strong performance in crack segmentation tasks, they often struggle with complex backgrounds and fine-grained tubular structures. Transformers, though excellent at capturing global context, tend to lack precision in fine feature extraction. 
 
-To address these challenges, we introduce **DSCformer**, a hybrid model that combines the power of an enhanced **Dynamic Snake Convolution (DSConv)** with a Transformer architecture. 
+To address these challenges, we introduce **DSCformer**, a hybrid model that combines the power of an **Enhanced Dynamic Snake Convolution (Enhanced DSConv)** with a Transformer architecture. 
 
 ### Key Contributions:
 - **Enhanced DSConv**: Utilizes a pyramid kernel and bidirectional offset iteration to improve the capture of intricate crack structures.
-- **Weighted Channel Attention Module (WCAM)**: Refines channel attention, ensuring more precise feature extraction.
-- **Hybrid Model**: Combines DSConv and SegFormer, significantly improving crack segmentation performance and outperforming state-of-the-art methods.
+- **Weighted Channel Attention Module**: Refines channel attention, ensuring more precise feature extraction.
+- **DSCformer**: Combines nhanced DSConv and SegFormer, significantly improving crack segmentation performance and outperforming state-of-the-art methods.
 
 We evaluate DSCformer on the **Crack3238** and **FIND** datasets, achieving impressive Intersection over Union (IoU) scores of **59.22%** and **87.24%**, respectively.
 
@@ -34,16 +34,17 @@ To train **DSCformer**, you will need the **NVIDIA SegFormer B0** model. You can
 
 To run this code, make sure to install all required libraries by running:
 
-```bash
-pip install -r requirements.txt
 
-Training DSCformer
+	pip install -r requirements.txt
+
+
+## Training DSCformer
 
 Follow the steps below to train DSCformer on your dataset:
-	1.	Convert your dataset into h5py format using the create_h5py.py script.
-	2.	Download the pre-trained SegFormer B0 model.
-	3.	Run the training script to train DSCformer on your dataset.
+1. Convert your dataset into h5py format using the create_h5py.py script.
+2. Download the pre-trained SegFormer B0 model.
+3. Run the training script to train DSCformer on your dataset.
 
-License
+## License
 
 This project is licensed under the MIT License. See the LICENSE￼ file for more details.
